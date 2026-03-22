@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet, Button} from 'react-native';
 
 export default function Home() {
   return (
@@ -24,6 +24,11 @@ export default function Home() {
       }}>
         Learning React Native 🔥
       </Text>
+
+      <Button
+         title='Click me'
+         >
+      </Button>
 
     </View>
   );
