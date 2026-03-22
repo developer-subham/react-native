@@ -1,16 +1,16 @@
-import { View, Text, StyleSheet, Button} from 'react-native';
-
+import { View, Text, StyleSheet, TouchableHighlight} from 'react-native';
+ 
 export default function Home() {
   return (
     <View style={{
       flex: 1,
-      backgroundColor: '#0c1420',
+      backgroundColor: '#F2EAE0',
       justifyContent: 'center',
       alignItems: 'center'
     }}>
       
       <Text style={{
-        color: 'white',
+        color: 'black',
         fontSize: 30,
         fontWeight: 'bold',
         marginBottom: 10
@@ -25,10 +25,22 @@ export default function Home() {
         Learning React Native 🔥
       </Text>
 
-      <Button
-         title='Click me'
-         >
-      </Button>
+      <TouchableHighlight style={{
+        backgroundColor: '#091413',
+        height: 30,
+        width: 80, 
+        marginTop: 10,
+        borderRadius: 8,
+      }}>
+        <Text style={{
+          fontWeight: 'light',
+          padding: 5,
+          color: 'white',
+          textAlign: 'center'
+        }}>
+          Click me
+        </Text>
+      </TouchableHighlight>
 
     </View>
   );
