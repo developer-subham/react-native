@@ -1,6 +1,8 @@
 import { View, Text, StyleSheet, TouchableHighlight} from 'react-native';
+import { useRouter } from 'expo-router';
  
 export default function Home() {
+  const router = useRouter();
   return (
     <View style={{
       flex: 1,
@@ -15,14 +17,14 @@ export default function Home() {
         fontWeight: 'bold',
         marginBottom: 10
       }}>
-        Hello Subham 🚀
+        Hello World
       </Text>
 
       <Text style={{
         color: 'gray',
         fontSize: 18
       }}>
-        Learning React Native 🔥
+        This app created by Subham
       </Text>
 
       <TouchableHighlight style={{
@@ -31,14 +33,16 @@ export default function Home() {
         width: 80, 
         marginTop: 10,
         borderRadius: 8,
-      }}>
+      }}
+        onPress={()=> router.push('/input')}
+      >
         <Text style={{
           fontWeight: 'light',
           padding: 5,
           color: 'white',
           textAlign: 'center'
         }}>
-          Click me
+          Let's Go
         </Text>
       </TouchableHighlight>
 
